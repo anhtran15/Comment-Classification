@@ -1,16 +1,18 @@
+# THIS IS A SCRIPT TO CRAWL COMMENTS FROM A FACEBOOK POST
+
 from selenium import webdriver
 from selenium.webdriver.common.action_chains import ActionChains
 from time import sleep
 from random import randint
 
 # PREDEFINED HERE
-driver_path = r''       # where stores the browser driver
-userName = ''           # username/email to login FB
-passWord = ''           # password to login FB
-links_file_path = ''    # where stores the file contains links to FB posts you want to get data
-output_file_path = ''   # where to output data 
+driver_path = r''       # path to browser driver
+userName = ''           # username/email to login FB (optional)
+passWord = ''           # password to login FB (optional)
+links_file_path = ''    # path to the file contains links to FB posts you want to get data
+output_file_path = ''   # path to save data
 
-# Browse FB
+# Initialize webdriver
 driver = webdriver.Firefox(executable_path=driver_path)
 driver.get('https://www.facebook.com')
 sleep(randint(4, 7))
