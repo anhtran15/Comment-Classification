@@ -1,1 +1,2 @@
-# CS114.K21.KHTN
+## Comment Classification
+## This project was done during my Machine Learning course.
